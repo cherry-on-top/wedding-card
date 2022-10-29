@@ -1,0 +1,23 @@
+.swiper-containerF {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  display: block;
+  background-color: #fff;
+  z-index: 102;
+}
+
+.swiper-slideF {
+  width: 100%;
+  height: 100%;
+  background: #000;
+}
+
+#fullsizeG.swiper-container-horizontal>.swiper-pagination-bullets,
+#fullsizeG.swiper-pagination-custom,
+#fullsizeG.swiper-pagination-fraction .swiper-paginationF {
+  position: fixed;
+  bottom: 50px;
+  text-align: center;
+}

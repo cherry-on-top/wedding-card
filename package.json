@@ -1,0 +1,41 @@
+{
+  "name": "wedding-card",
+  "version": "1.0.0",
+  "repository": "https://github.com/say8425/wedding-card",
+  "author": "Cheon Park",
+  "source": "src/index.html",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts,.json,.cjs,.html . --max-warnings 0",
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "devDependencies": {
+    "@parcel/packager-ts": "2.7.0",
+    "@parcel/transformer-sass": "2.7.0",
+    "@typescript-eslint/eslint-plugin": "^5.40.1",
+    "@typescript-eslint/parser": "^5.40.1",
+    "eslint": "^8.25.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-import-resolver-typescript": "^3.5.1",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest": "^27.1.2",
+    "eslint-plugin-jest-extended": "^2.0.0",
+    "eslint-plugin-jest-formatting": "^3.1.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prefer-arrow": "^1.2.3",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.1.0",
+    "eslint-plugin-simple-import-sort": "^8.0.0",
+    "eslint-plugin-unicorn": "^44.0.2",
+    "parcel": "^2.7.0",
+    "prettier": "^2.7.1",
+    "stylelint": "^14.14.0",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-standard": "^29.0.0",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "@types/jquery": "^1.10.39",
+    "jquery": "^1.11.3"
+  }
+}

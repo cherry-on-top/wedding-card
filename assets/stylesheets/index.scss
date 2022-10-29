@@ -1,0 +1,122 @@
+@font-face {
+  font-family: "Nanum Myeongjo", serif;
+  src: url("/assets/fonts/NanumMyeongjo.otf") format("otf");
+}
+
+@font-face {
+  font-family: 'OptimaLTStd';
+  src: url('/assets/OptimaLTStd.otf') format('otf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  font-family: "Nanum Myeongjo", serif;
+  text-decoration: none;
+  color: #000;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.item a {
+  color: #000
+}
+
+/* .middle{position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);} */
+.menu {
+  width: 91vw;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.item {
+  overflow: hidden;
+}
+
+.btn {
+  display: block;
+  position: relative;
+  border: 1px solid #a4a4a2;
+  width: 90vw;
+  height: 8vw;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 4vw;
+  line-height: 8vw;
+  font-weight: 700;
+}
+
+
+.title_box_wrap {
+  position: relative;
+  width: 100%;
+}
+
+.title_box_wrap .frame {
+  width: 100%;
+  z-index: 0;
+}
+
+.title_box_wrap .main_img {
+  width: 80vw;
+  position: absolute;
+  top: 36vw;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: -1;
+}
+
+.title_box_wrap .names {
+  position: absolute;
+  top: 16vw;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 1;
+  color: #fff;
+  font-size: 5.5vw;
+  white-space: nowrap;
+}
+
+.title_box_wrap .wd_date {
+  position: absolute;
+  top: 156vw;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 1;
+  color: #fff;
+  font-size: 4.5vw;
+  white-space: nowrap;
+}
+
+.title_box_wrap .wd_info {
+  position: absolute;
+  top: 164vw;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 1;
+  color: #fff;
+  font-size: 4.5vw;
+  white-space: nowrap;
+}
+
+.utterances {
+  background-image: url(/assets/patron.png);
+}
+
+.background_image {
+  background-image: url(/assets/patron.png);
+}
