@@ -21,17 +21,23 @@
   <script type="text/javascript" src="/assets/swiper-bundle.min.js"></script>
   <script type="text/javascript" src="/assets/calendar_wed144.js"></script>
   <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=tmj49gy57w"></script>
-  <script src="https://t1.kakaocdn.net/kakao_js_sdk/2.0.0/kakao.min.js" integrity="sha384-PFHeU/4gvSH8kpvhrigAPfZGBDPs372JceJq3jAXce11bVA6rMvGWzvP4fMQuBGL" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://t1.kakaocdn.net/kakao_js_sdk/2.0.0/kakao.min.js" integrity="sha384-PFHeU/4gvSH8kpvhrigAPfZGBDPs372JceJq3jAXce11bVA6rMvGWzvP4fMQuBGL" crossorigin="anonymous"></script>
   <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=c29d9bf272a1cb2738657e8ca6a20b05"></script>
+
+  <script type="module" src="swiper-container.js"></script>
+
+  <link rel="stylesheet" href="/assets/swiper-bundle.min.css">
+  <link rel="stylesheet" href="/assets/royalslider.css" type="text/css">
+  <link rel="stylesheet" href="/assets/rs-default.css" type="text/css">
 
   <link rel="stylesheet" href="/assets/stylesheets/index.scss">
   <link rel="stylesheet" href="/assets/stylesheets/gallery.scss">
   <link rel="stylesheet" href="/assets/stylesheets/calendar.scss">
-  <link rel="stylesheet" href="/assets/swiper-bundle.min.css">
-  <link rel="stylesheet" href="/assets/royalslider.css" type="text/css">
-  <link rel="stylesheet" href="/assets/rs-default.css" type="text/css"> </head>
+  <link rel="stylesheet" href="/assets/stylesheets/swiper.scss">
+</head>
 
 <body>
+
 <div id="fullsizeG" class="swiper-containerF swiper-container-initialized swiper-container-horizontal swiper-container-ios">
   <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-375px, 0px, 0px);" id="swiper-wrapper-7562f72d7c2aaf66" aria-live="polite">
     <div class="swiper-slide swiper-slide-duplicate swiper-slide-prev" data-swiper-slide-index="8" style="width: 375px;" role="group" aria-label="1 / 11"><img src="/assets/crop_A_221030_014749_05678300WcAwgJ.jpg" style="width:100vw;"></div>
@@ -48,22 +54,13 @@
   </div>
   <div class="swiper-paginationF swiper-pagination-bullets"><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span></div> <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span> </div>
 <div onclick="fullsizeGclose()" id="fullsizeGBT" style="position:fixed;top:3vw;right:3vw;background-image:url(../assets/rs-default.png);background-position:-32px 0;width: 32px;height: 32px;background-color: #000;border-radius: 2px;margin: 6px;z-index:103;display:none;"> </div>
+
 <script>
 function fullsizeGclose() {
   document.getElementById("fullsizeG").style.visibility = "hidden"
   document.getElementById("fullsizeGBT").style.display = "none"
 }
 
-const swiper = new Swiper('.swiper-containerF', {
-  grabCursor: true,
-  centeredSlides: true,
-  slidesPerView: '1',
-  loop: true,
-  pagination: {
-    el: '.swiper-paginationF',
-    type: 'bullets',
-  },
-})
 </script>
 <!-- 새로운 갤러리 전체화면 기능 종료 -->
 <!--	맨상단 -->
@@ -263,32 +260,14 @@ const swiper = new Swiper('.swiper-containerF', {
 <div id="calendar_div" style="width: 90%; margin: 0px auto; z-index: 99999; position: absolute; top: 1918px; left: 90px; visibility: visible;"> </div>
 <!-- 달력 종료 -->
 <!-- 갤러리 시작 -->
-<style>
-    .swiper-container {
-        padding-bottom: 6vw;
-    }
 
-    .swiper-slide {
-        background-position: center;
-        background-size: cover;
-        width: 47.4vw;
-        height: 83vw;
-        background: rgba(0, 0, 0, 0);
-    }
-    .swiper-container-horizontal>.swiper-pagination-bullets,
-    .swiper-pagination-custom,
-    .swiper-pagination-fraction {
-        bottom: 0px;
-        left: 0;
-        width: 100%;
-    }
+<script>
+function fullsizeG() {
+  document.getElementById("fullsizeG").style.visibility = "visible"
+  document.getElementById("fullsizeGBT").style.display = "block"
+}
+</script>
 
-    .swiper-container>.swiper-wrapper .swiper-slide img {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%)
-    }
-</style>
 <div class="background_image" style="height:35vw;background-color: #ebd3bb;position: relative;text-align:center;"> <img src="/assets/gallery.png" style="position: absolute;top:21vw;transform: translate(-50%);width:26vw;">
   <div style="position:absolute;top:28vw;right:3vw;background-image:url(../assets/rs-default.png);width: 32px;height: 32px;background-color: #000;border-radius: 2px;margin: 6px;z-index:101;" onclick="fullsizeG()"></div>
 </div>
@@ -310,31 +289,21 @@ const swiper = new Swiper('.swiper-containerF', {
   </div>
   <!-- Add Pagination -->
   <br>
-  <div class="swiper-pagination swiper-pagination-bullets"><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span></div> <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span> </div>
-<script>
-const swiper = new Swiper('.swiper-container', {
-  effect: 'coverflow',
-  grabCursor: true,
-  centeredSlides: true,
-  slidesPerView: '1.5',
-  coverflowEffect: {
-    rotate: 20,
-    stretch: 0,
-    depth: 200,
-    modifier: 1,
-    slideShadows: false,
-  },
-  loop: true,
-  pagination: {
-    el: '.swiper-pagination',
-  },
-})
+  <div class="swiper-pagination swiper-pagination-bullets">
+    <span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
+    <span class="swiper-pagination-bullet"></span>
+    <span class="swiper-pagination-bullet"></span>
+    <span class="swiper-pagination-bullet"></span>
+    <span class="swiper-pagination-bullet"></span>
+    <span class="swiper-pagination-bullet"></span>
+    <span class="swiper-pagination-bullet"></span>
+    <span class="swiper-pagination-bullet"></span>
+    <span class="swiper-pagination-bullet"></span>
+  </div>
+  <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+</div>
 
-function fullsizeG() {
-  document.getElementById("fullsizeG").style.visibility = "visible"
-  document.getElementById("fullsizeGBT").style.display = "block"
-}
-</script>
+
 <div class="background_image" style="height:33vw;width:100%;background-color: #ebd3bb;position: relative;text-align:center;"> <img src="/assets/gallery_2.png" style="position: absolute;top:10vw;transform: translate(-50%);width:63vw;"> </div>
 <!-- 갤러리 종료 -->
 <style>
