@@ -351,7 +351,7 @@ const marker = new kakao.maps.Marker({
 marker.setMap(map);
 </script>
 <div class="location_wrap">
-  <div class="location background_image" style="width:100%;background-color: #ebd3bb;padding-top: 12vw;">
+  <div class="location background_image">
     <div style="font-size:4vw;margin-bottom: 2.1vw;text-align:center;">서울특별시 송파구 송파대로 155 (문정동651-8)</div>
     <div style="font-size:4vw;margin-bottom: 2.1vw;text-align:center;">더컨벤션 송파문정점 / 그랜드볼룸 </div>
     <div class="background_image" style="height:25vw;width:100%;background-color: #ebd3bb;position: relative;padding-top: 12vw;text-align:center;">
@@ -370,9 +370,6 @@ marker.setMap(map);
       </a>
     </div>
     <script type="text/javascript">
-    //<![CDATA[
-    // 사용할 앱의 JavaScript 키를 설정해 주세요.
-    // 카카오 로그인 버튼을 생성합니다.
     function KakaoNavi() {
       Kakao.Navi.start({
         name: "서울특별시 송파구 송파대로 155 (문정동651-8) 더컨벤션 송파문정점",
@@ -381,23 +378,7 @@ marker.setMap(map);
         coordType: 'wgs84'
       });
     }
-    //]]>
     </script>
-    <script type="text/javascript">
-    //<![CDATA[
-    // 사용할 앱의 JavaScript 키를 설정해 주세요.
-    // 카카오 로그인 버튼을 생성합니다.
-    function navi() {
-      Kakao.Navi.start({
-        name: "서울특별시 송파구 송파대로 155 (문정동651-8) 더컨벤션 송파문정점",
-        x: 127.1226450,
-        y: 37.4840160,
-        coordType: 'wgs84'
-      });
-    }
-    //]]>
-    </script>
-    <div style="height:20px"></div>
   </div>
 </div>
 <script src="https://utteranc.es/client.js"
