@@ -156,3 +156,20 @@ a, a:hover, a:focus, a:active {
   line-height: 8.5vw;
   position: absolute;
 }
+
+.kakao_share_container {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.kakao_share_icon {
+  width: 6.25vw;
+  vertical-align:-7px;
+}
+
+.kakao_share {
+  font-size: 4.4vw;
+  font-family: sans-serif;
+  color: #CDBBAB;
+}

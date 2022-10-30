@@ -408,12 +408,15 @@ marker.setMap(map);
         async>
 </script>
 <!-- 공유하기 -->
-<div class="background_image" style="position:relative;height:25vw;text-align:center;">
+<div class="background_image" style="position:relative;height:16vw;text-align:center;">
   <div style="position:absolute;left:50%;top:2vw;transform: translateX(-50%);line-height:3.4vw;white-space:nowrap;">
-    <a href="javascript:KakaoLink();"> <img style="width:6.25vw;vertical-align:-7px;" src="/assets/kakaotalk.png"> <span style="font-size: 4.4vw;">&nbsp;카카오톡으로 공유하기</span> </a>
+    <a class="kakao_share_container" href="javascript:KakaoLink();">
+      <img alt="카카오" class="kakao_share_icon" src="/assets/kakaotalk.png">
+      <span class="kakao_share">카카오톡으로 공유하기</span>
+    </a>
   </div>
-  <a href="https://bomtvcard.com"> <img src="/assets/logo.png" style="width:24vw;position:absolute;bottom:5vw;transform: translate(-50%);"> </a>
 </div>
+
 <script type="text/javascript">
 Kakao.init('c29d9bf272a1cb2738657e8ca6a20b05');
 
