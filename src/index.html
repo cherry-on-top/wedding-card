@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html style="width:100%;overflow-x:hidden;" lang="ko">
 
 <head>
@@ -19,7 +20,7 @@
 
   <script type="text/javascript" src="/assets/jquery-1.11.2.min.js"></script>
   <script type="text/javascript" src="/assets/swiper-bundle.min.js"></script>
-  <script type="text/javascript" src="/assets/calendar_wed144.js"></script>
+
   <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=tmj49gy57w"></script>
   <script type="text/javascript" src="https://t1.kakaocdn.net/kakao_js_sdk/2.0.0/kakao.min.js" integrity="sha384-PFHeU/4gvSH8kpvhrigAPfZGBDPs372JceJq3jAXce11bVA6rMvGWzvP4fMQuBGL" crossorigin="anonymous"></script>
   <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=c29d9bf272a1cb2738657e8ca6a20b05"></script>
@@ -152,112 +153,79 @@ function fullsizeGclose() {
   <div class="calendar_wrap2">
     <div style="width:90%;margin:0 auto;position:relative;">
       <div class="_calendarLeft">
-        <div style="font-size:3.5vw;font-family: OptimaLTStd;">2022</div>
-        <div style="font-weight:bold;font-size:5.5vw;letter-spacing:4px;margin-top:7px;font-family: OptimaLTStd;"> 11</div>
+        <div style="font-size:3.5vw;">2022</div>
+        <div style="font-weight:bold;font-size:5.5vw;letter-spacing:4px;margin-top:7px;"> 11</div>
       </div>
       <div id="div_calendar">
         <table class="cal">
           <tbody>
           <tr style="height:30px">
-            <th style="color:#e97265;width:14.28%;	font-family:SMSEMyungJoStd-Regular-FD1;">일</th>
-            <th style="width:14.28%;font-family:SMSEMyungJoStd-Regular-FD1;">월</th>
-            <th style="width:14.28%;font-family:SMSEMyungJoStd-Regular-FD1;">화</th>
-            <th style="width:14.28%;font-family:SMSEMyungJoStd-Regular-FD1;">수</th>
-            <th style="width:14.28%;font-family:SMSEMyungJoStd-Regular-FD1;">목</th>
-            <th style="width:14.28%;font-family:SMSEMyungJoStd-Regular-FD1;">금</th>
-            <th style="width:14.28%;font-family:SMSEMyungJoStd-Regular-FD1;">토</th>
+            <th style="color:#e97265;width:14.28%;">일</th>
+            <th style="width:14.28%;">월</th>
+            <th style="width:14.28%;">화</th>
+            <th style="width:14.28%;">수</th>
+            <th style="width:14.28%;">목</th>
+            <th style="width:14.28%;">금</th>
+            <th style="width:14.28%;">토</th>
           </tr>
           <tr style="height:15px">
             <td colspan="10"></td>
           </tr>
           <tr>
-            <td> </td>
-            <td> </td>
-            <td style=" text-align:center; font-family: OptimaLTStd;" onclick="calendar_set_date('20221101');">1</td>
-            <td style=" text-align:center; font-family: OptimaLTStd;" onclick="calendar_set_date('20221102');">2</td>
-            <td style=" text-align:center; font-family: OptimaLTStd;" onclick="calendar_set_date('20221103');">3</td>
-            <td style=" text-align:center; font-family: OptimaLTStd;" onclick="calendar_set_date('20221104');">4</td>
-            <td style=" text-align:center; font-family: OptimaLTStd; " onclick="calendar_set_date('20221105');">5</td>
+            <td></td>
+            <td></td>
+            <td style=" text-align:center;">1</td>
+            <td style=" text-align:center;">2</td>
+            <td style=" text-align:center;">3</td>
+            <td style=" text-align:center;">4</td>
+            <td style=" text-align:center;">5</td>
           </tr>
           <tr>
-            <td style=" text-align:center; font-family: OptimaLTStd; color:#e97265;" onclick="calendar_set_date('20221106');">6</td>
-            <td style=" text-align:center; font-family: OptimaLTStd;" onclick="calendar_set_date('20221107');">7</td>
-            <td style=" text-align:center; font-family: OptimaLTStd;" onclick="calendar_set_date('20221108');">8</td>
-            <td style=" text-align:center; font-family: OptimaLTStd;" onclick="calendar_set_date('20221109');">9</td>
-            <td style=" text-align:center; font-family: OptimaLTStd;" onclick="calendar_set_date('20221110');">10</td>
-            <td style=" text-align:center; font-family: OptimaLTStd;" onclick="calendar_set_date('20221111');">11</td>
-            <td style=" text-align:center; font-family: OptimaLTStd; " onclick="calendar_set_date('20221112');">12</td>
+            <td style=" text-align:center; color:#e97265;">6</td>
+            <td style=" text-align:center;">7</td>
+            <td style=" text-align:center;">8</td>
+            <td style=" text-align:center;">9</td>
+            <td style=" text-align:center;">10</td>
+            <td style=" text-align:center;">11</td>
+            <td style=" text-align:center;">12</td>
           </tr>
           <tr>
-            <td style=" text-align:center; font-family: OptimaLTStd; color:#e97265;" onclick="calendar_set_date('20221113');">13</td>
-            <td style=" text-align:center; font-family: OptimaLTStd;" onclick="calendar_set_date('20221114');">14</td>
-            <td style=" text-align:center; font-family: OptimaLTStd;" onclick="calendar_set_date('20221115');">15</td>
-            <td style=" text-align:center; font-family: OptimaLTStd;" onclick="calendar_set_date('20221116');">16</td>
-            <td style=" text-align:center; font-family: OptimaLTStd;" onclick="calendar_set_date('20221117');">17</td>
-            <td style=" text-align:center; font-family: OptimaLTStd;" onclick="calendar_set_date('20221118');">18</td>
-            <td style=" text-align:center; font-family: OptimaLTStd; " onclick="calendar_set_date('20221119');">19</td>
+            <td style=" text-align:center; color:#e97265;">13</td>
+            <td style=" text-align:center;">14</td>
+            <td style=" text-align:center;">15</td>
+            <td style=" text-align:center;">16</td>
+            <td style=" text-align:center;">17</td>
+            <td style=" text-align:center;">18</td>
+            <td style=" text-align:center;">19</td>
           </tr>
           <tr>
-            <td class="content_img" style=" text-align:center; font-family: OptimaLTStd; color:#e97265;" onclick="calendar_set_date('20221120');">
+            <td class="content_img" style=" text-align:center; color:#e97265;">
               <div class="content_imgBox">20</div>
               <div class="content_imgBoxFont"></div>
             </td>
-            <td style=" text-align:center; font-family: OptimaLTStd;" onclick="calendar_set_date('20221121');">21</td>
-            <td style=" text-align:center; font-family: OptimaLTStd;" onclick="calendar_set_date('20221122');">22</td>
-            <td style=" text-align:center; font-family: OptimaLTStd;" onclick="calendar_set_date('20221123');">23</td>
-            <td style=" text-align:center; font-family: OptimaLTStd;" onclick="calendar_set_date('20221124');">24</td>
-            <td style=" text-align:center; font-family: OptimaLTStd;" onclick="calendar_set_date('20221125');">25</td>
-            <td style=" text-align:center; font-family: OptimaLTStd; " onclick="calendar_set_date('20221126');">26</td>
+            <td style=" text-align:center;">21</td>
+            <td style=" text-align:center;">22</td>
+            <td style=" text-align:center;">23</td>
+            <td style=" text-align:center;">24</td>
+            <td style=" text-align:center;">25</td>
+            <td style=" text-align:center;">26</td>
           </tr>
           <tr>
-            <td style=" text-align:center; font-family: OptimaLTStd; color:#e97265;" onclick="calendar_set_date('20221127');">27</td>
-            <td style=" text-align:center; font-family: OptimaLTStd;" onclick="calendar_set_date('20221128');">28</td>
-            <td style=" text-align:center; font-family: OptimaLTStd;" onclick="calendar_set_date('20221129');">29</td>
-            <td style=" text-align:center; font-family: OptimaLTStd;" onclick="calendar_set_date('20221130');">30</td>
+            <td style=" text-align:center; color:#e97265;">27</td>
+            <td style=" text-align:center;">28</td>
+            <td style=" text-align:center;">29</td>
+            <td style=" text-align:center;">30</td>
             <td> </td>
             <td> </td>
             <td> </td>
           </tr>
           </tbody>
         </table>
-        <div id="calendar_years" style="position:absolute; margin-left:3px; width:154px; visibility:hidden; background-color:#ffffff;">
-          <div style="margin-top:0px; margin-left:0px; float:left; width:35px; height:20px; text-align:center; padding-top:2px; border:1px solid #c2c2c2; background-color:#e5e5e5; font-size:11px; cursor:pointer;" onclick="calendar_draw('20211101')" onmouseover="this.style.backgroundColor='#c2c2c2';" onmouseout="this.style.backgroundColor='#e5e5e5';">2021</div>
-          <div style="margin-top:0px; margin-left:2px; float:left; width:35px; height:20px; text-align:center; padding-top:2px; border:1px solid #c2c2c2; background-color:#e5e5e5; font-size:11px; cursor:pointer;" onclick="calendar_draw('20221101')" onmouseover="this.style.backgroundColor='#c2c2c2';" onmouseout="this.style.backgroundColor='#e5e5e5';">2022</div>
-          <div style="margin-top:0px; margin-left:2px; float:left; width:35px; height:20px; text-align:center; padding-top:2px; border:1px solid #c2c2c2; background-color:#e5e5e5; font-size:11px; cursor:pointer;" onclick="calendar_draw('20231101')" onmouseover="this.style.backgroundColor='#c2c2c2';" onmouseout="this.style.backgroundColor='#e5e5e5';">2023</div>
-          <div style="margin-top:0px; margin-left:2px; float:left; width:35px; height:20px; text-align:center; padding-top:2px; border:1px solid #c2c2c2; background-color:#e5e5e5; font-size:11px; cursor:pointer;" onclick="calendar_draw('20241101')" onmouseover="this.style.backgroundColor='#c2c2c2';" onmouseout="this.style.backgroundColor='#e5e5e5';">2024</div>
-          <div style="margin-top:2px; margin-left:0px; float:left; width:35px; height:20px; text-align:center; padding-top:2px; border:1px solid #c2c2c2; background-color:#e5e5e5; font-size:11px; cursor:pointer;" onclick="calendar_draw('20251101')" onmouseover="this.style.backgroundColor='#c2c2c2';" onmouseout="this.style.backgroundColor='#e5e5e5';">2025</div>
-          <div style="margin-top:2px; margin-left:2px; float:left; width:35px; height:20px; text-align:center; padding-top:2px; border:1px solid #c2c2c2; background-color:#e5e5e5; font-size:11px; cursor:pointer;" onclick="calendar_draw('20261101')" onmouseover="this.style.backgroundColor='#c2c2c2';" onmouseout="this.style.backgroundColor='#e5e5e5';">2026</div>
-          <div style="margin-top:2px; margin-left:2px; float:left; width:35px; height:20px; text-align:center; padding-top:2px; border:1px solid #c2c2c2; background-color:#e5e5e5; font-size:11px; cursor:pointer;" onclick="calendar_draw('20271101')" onmouseover="this.style.backgroundColor='#c2c2c2';" onmouseout="this.style.backgroundColor='#e5e5e5';">2027</div>
-          <div style="margin-top:2px; margin-left:2px; float:left; width:35px; height:20px; text-align:center; padding-top:2px; border:1px solid #c2c2c2; background-color:#e5e5e5; font-size:11px; cursor:pointer;" onclick="calendar_draw('20281101')" onmouseover="this.style.backgroundColor='#c2c2c2';" onmouseout="this.style.backgroundColor='#e5e5e5';">2028</div>
-          <div style="margin-top:2px; margin-left:0px; float:left; width:35px; height:20px; text-align:center; padding-top:2px; border:1px solid #c2c2c2; background-color:#e5e5e5; font-size:11px; cursor:pointer;" onclick="calendar_draw('20291101')" onmouseover="this.style.backgroundColor='#c2c2c2';" onmouseout="this.style.backgroundColor='#e5e5e5';">2029</div>
-          <div style="margin-top:2px; margin-left:2px; float:left; width:35px; height:20px; text-align:center; padding-top:2px; border:1px solid #c2c2c2; background-color:#e5e5e5; font-size:11px; cursor:pointer;" onclick="calendar_draw('20301101')" onmouseover="this.style.backgroundColor='#c2c2c2';" onmouseout="this.style.backgroundColor='#e5e5e5';">2030</div>
-          <div style="margin-top:2px; margin-left:2px; float:left; width:35px; height:20px; text-align:center; padding-top:2px; border:1px solid #c2c2c2; background-color:#e5e5e5; font-size:11px; cursor:pointer;" onclick="calendar_years_change('2011', '11')" onmouseover="this.style.backgroundColor='#c2c2c2';" onmouseout="this.style.backgroundColor='#e5e5e5';">이전</div>
-          <div style="margin-top:2px; margin-left:2px; float:left; width:35px; height:20px; text-align:center; padding-top:2px; border:1px solid #c2c2c2; background-color:#e5e5e5; font-size:11px; cursor:pointer;" onclick="calendar_years_change('2031', '11')" onmouseover="this.style.backgroundColor='#c2c2c2';" onmouseout="this.style.backgroundColor='#e5e5e5';">다음</div>
-        </div>
-        <div id="calendar_months" style="position:absolute; margin-left:3px; width:154px; visibility:hidden; background-color:#ffffff;">
-          <div style="float:left; width:22px; height:20px; text-align:center; padding-top:2px; border:1px solid #c2c2c2; background-color:#e5e5e5; font-size:11px; cursor:pointer;" onclick="calendar_draw('202201')" onmouseover="this.style.backgroundColor='#c2c2c2';" onmouseout="this.style.backgroundColor='#e5e5e5';">1</div>
-          <div style="float:left; margin-left:2px; width:22px; height:20px; text-align:center; padding-top:2px; border:1px solid #c2c2c2; background-color:#e5e5e5; font-size:11px; cursor:pointer;" onclick="calendar_draw('202202')" onmouseover="this.style.backgroundColor='#c2c2c2';" onmouseout="this.style.backgroundColor='#e5e5e5';">2</div>
-          <div style="float:left; margin-left:2px; width:22px; height:20px; text-align:center; padding-top:2px; border:1px solid #c2c2c2; background-color:#e5e5e5; font-size:11px; cursor:pointer;" onclick="calendar_draw('202203')" onmouseover="this.style.backgroundColor='#c2c2c2';" onmouseout="this.style.backgroundColor='#e5e5e5';">3</div>
-          <div style="float:left; margin-left:2px; width:22px; height:20px; text-align:center; padding-top:2px; border:1px solid #c2c2c2; background-color:#e5e5e5; font-size:11px; cursor:pointer;" onclick="calendar_draw('202204')" onmouseover="this.style.backgroundColor='#c2c2c2';" onmouseout="this.style.backgroundColor='#e5e5e5';">4</div>
-          <div style="float:left; margin-left:2px; width:22px; height:20px; text-align:center; padding-top:2px; border:1px solid #c2c2c2; background-color:#e5e5e5; font-size:11px; cursor:pointer;" onclick="calendar_draw('202205')" onmouseover="this.style.backgroundColor='#c2c2c2';" onmouseout="this.style.backgroundColor='#e5e5e5';">5</div>
-          <div style="float:left; margin-left:2px; width:22px; height:20px; text-align:center; padding-top:2px; border:1px solid #c2c2c2; background-color:#e5e5e5; font-size:11px; cursor:pointer;" onclick="calendar_draw('202206')" onmouseover="this.style.backgroundColor='#c2c2c2';" onmouseout="this.style.backgroundColor='#e5e5e5';">6</div>
-          <div style="float:left; margin-top:1px; width:22px; height:20px; text-align:center; padding-top:2px; border:1px solid #c2c2c2; background-color:#e5e5e5; font-size:11px; cursor:pointer;" onclick="calendar_draw('202207')" onmouseover="this.style.backgroundColor='#c2c2c2';" onmouseout="this.style.backgroundColor='#e5e5e5';">7</div>
-          <div style="float:left; margin-left:2px; margin-top:1px; width:22px; height:20px; text-align:center; padding-top:2px; border:1px solid #c2c2c2; background-color:#e5e5e5; font-size:11px; cursor:pointer;" onclick="calendar_draw('202208')" onmouseover="this.style.backgroundColor='#c2c2c2';" onmouseout="this.style.backgroundColor='#e5e5e5';">8</div>
-          <div style="float:left; margin-left:2px; margin-top:1px; width:22px; height:20px; text-align:center; padding-top:2px; border:1px solid #c2c2c2; background-color:#e5e5e5; font-size:11px; cursor:pointer;" onclick="calendar_draw('202209')" onmouseover="this.style.backgroundColor='#c2c2c2';" onmouseout="this.style.backgroundColor='#e5e5e5';">9</div>
-          <div style="float:left; margin-left:2px; margin-top:1px; width:22px; height:20px; text-align:center; padding-top:2px; border:1px solid #c2c2c2; background-color:#e5e5e5; font-size:11px; cursor:pointer;" onclick="calendar_draw('202210')" onmouseover="this.style.backgroundColor='#c2c2c2';" onmouseout="this.style.backgroundColor='#e5e5e5';">10</div>
-          <div style="float:left; margin-left:2px; margin-top:1px; width:22px; height:20px; text-align:center; padding-top:2px; border:1px solid #c2c2c2; background-color:#e5e5e5; font-size:11px; cursor:pointer;" onclick="calendar_draw('202211')" onmouseover="this.style.backgroundColor='#c2c2c2';" onmouseout="this.style.backgroundColor='#e5e5e5';">11</div>
-          <div style="float:left; margin-left:2px; margin-top:1px; width:22px; height:20px; text-align:center; padding-top:2px; border:1px solid #c2c2c2; background-color:#e5e5e5; font-size:11px; cursor:pointer;" onclick="calendar_draw('202212')" onmouseover="this.style.backgroundColor='#c2c2c2';" onmouseout="this.style.backgroundColor='#e5e5e5';">12</div>
-        </div>
       </div>
-      <div style="clear:both"></div>
     </div>
-    <input type="hidden" id="calendar_div_date" value="20221120">
-    <script>
-    calendar(null, 'div_calendar');
-    </script>
   </div>
 </div>
-<div id="calendar_div" style="width: 90%; margin: 0px auto; z-index: 99999; position: absolute; top: 1918px; left: 90px; visibility: visible;"> </div>
+
 <!-- 달력 종료 -->
 <!-- 갤러리 시작 -->
 
@@ -304,28 +272,13 @@ function fullsizeG() {
 </div>
 
 
-<div class="background_image" style="height:33vw;width:100%;background-color: #ebd3bb;position: relative;text-align:center;"> <img src="/assets/gallery_2.png" style="position: absolute;top:10vw;transform: translate(-50%);width:63vw;"> </div>
+<div class="background_image"
+     style="height:33vw; width:100%; background-color: #ebd3bb; position:relative; text-align:center;">
+  <img src="/assets/gallery_2.png"
+       style="position: absolute; top:10vw; transform: translate(-50%); width:63vw;">
+</div>
 <!-- 갤러리 종료 -->
-<style>
-    .movie {
-        position: relative;
-    }
 
-    .movie .player_btn {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        margin-top: -2.5em;
-        margin-left: -1.75em;
-        width: 3.5em;
-        height: 3.5em;
-    }
-
-    .movie .player_btn img {
-        width: 100%;
-    }
-</style>
-<!-- 방명록 -->
 <div class="background_image" style="background-color: #fff;margin: 0 auto;line-height:6vw;">
   <div style="height:3vw;"></div>
   <!-- 마음 전하실 곳 -->
@@ -454,7 +407,12 @@ marker.setMap(map);
     <div style="height:20px"></div>
   </div>
 </div>
-<script src="https://utteranc.es/client.js" repo="say8425/wedding-card" issue-term="title" label="💌 청첩장" crossorigin="anonymous" async>
+<script src="https://utteranc.es/client.js"
+        repo="cherry-on-top/wedding-card"
+        issue-term="title"
+        label="💌 청첩장"
+        crossorigin="anonymous"
+        async>
 </script>
 <!-- 공유하기 -->
 <div class="background_image" style="position:relative;height:25vw;text-align:center;">
@@ -500,31 +458,6 @@ function KakaoNavi() {
     coordType: 'wgs84'
   });
 }
-
-function sendFaceBook(title, url) {
-  document.location.href = "http://www.facebook.com/sharer.php?u=" + url + "&t=" + encodeURIComponent(title);
-}
-$(function() {
-  $('.player_btn , .player_pbtn').click(function() {
-    if($(this).attr('href')) {
-      var a_url = $(this).attr('href');
-    } else {
-      var a_url = $(this).parents('a').attr('href');
-    }
-    var url_arr = a_url.split('/');
-    if(url_arr.pop().substr(0, 1) == 'p') {
-      type = 1;
-    } else {
-      type = 0;
-    }
-    $.ajax({
-      url: '/_tongji_movie.php',
-      type: 'post',
-      async: false,
-      data: 'type=' + type + '&cu_code=1666521244813&skin=m001'
-    });
-  });
-});
 </script>
 </body>
 

@@ -3,11 +3,10 @@
 }
 
 .swiper-slide {
-  background-position: center;
+  background: rgba(0, 0, 0, 0) center;
   background-size: cover;
   width: 47.4vw;
   height: 83vw;
-  background: rgba(0, 0, 0, 0);
 }
 .swiper-container-horizontal>.swiper-pagination-bullets,
 .swiper-pagination-custom,
