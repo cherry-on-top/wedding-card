@@ -3,17 +3,13 @@
   src: url("/assets/fonts/NanumMyeongjo.otf") format("otf");
 }
 
-* {
-  font-family: "Nanum Myeongjo", serif;
-  text-decoration: none;
-  color: #000;
-}
-
 body {
+  color: #000;
   margin: 0;
   overflow: hidden;
   width: 100%;
   box-sizing: border-box;
+  font-family: "Nanum Myeongjo", serif;
 }
 
 li {
