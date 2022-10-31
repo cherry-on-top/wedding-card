@@ -371,8 +371,9 @@ marker.setMap(map);
         <div class="lo_btn">
           <a href="https://map.kakao.com/link/to/167068900">카카오맵 길찾기</a>
         </div>
-        <div class="lo_btn">
-          <a href="tel:02-6418-5000">웨딩홀 전화하기</a>
+        <div class="lo_btn"
+             onclick="KakaoLink();">
+          카카오톡으로 공유하기
         </div>
       </div>
     </div>
@@ -395,14 +396,6 @@ marker.setMap(map);
         crossorigin="anonymous"
         async>
 </script>
-<!-- 공유하기 -->
-<div class="background_image" style="position:relative;height:16vw;text-align:center;">
-  <div style="position:absolute;left:50%;top:2vw;transform: translateX(-50%);line-height:3.4vw;white-space:nowrap;">
-    <a class="kakao_share_container" href="javascript:KakaoLink();">
-      <img alt="카카오" class="kakao_share_icon" src="/assets/kakaotalk.png">
-      <span class="kakao_share">카카오톡으로 공유하기</span>
-    </a>
-  </div>
 </div>
 
 <script type="text/javascript">
