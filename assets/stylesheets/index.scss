@@ -211,3 +211,17 @@ a, a:hover, a:focus, a:active {
   font-family: sans-serif;
   color: #CDBBAB;
 }
+
+.credit {
+  width:100%;
+  background-color: #a88b7e;
+  padding: 1rem 0;
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  span {
+    margin-right: 1rem;
+  }
+}
