@@ -148,8 +148,30 @@ a, a:hover, a:focus, a:active {
 .location {
   width:100%;
   background-color: #ebd3bb;
-  padding-top: 12vw;
-  padding-bottom: 5.325vw;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.location_detail {
+  font-size:4vw;
+  line-height: 2;
+  margin-bottom: 20px;
+}
+
+.location_button_container {
+  background-color: #ebd3bb;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.location_button_container_row {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 }
 
 .lo_btn {
@@ -161,7 +183,6 @@ a, a:hover, a:focus, a:active {
   height: 8.2vw;
   font-size: 3.8vw;
   line-height: 8.5vw;
-  position: absolute;
 }
 
 .kakao_share_container {
