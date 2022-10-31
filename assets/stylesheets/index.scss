@@ -140,6 +140,45 @@ a, a:hover, a:focus, a:active {
   white-space: nowrap;
 }
 
+.gallery_container {
+  height: 9rem;
+  background-color: #ebd3bb;
+  position: relative;
+  text-align:center;
+}
+
+h2 {
+  margin: 0;
+  top: 5rem;
+  position: relative;
+
+  text-align: center;
+  font-size: 1.2rem;
+  letter-spacing: 3px;
+  color: #D5CBC0;
+}
+
+h3 {
+  margin-top: 4rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #C3BFBD;
+}
+
+h4 {
+  text-align: center;
+  font-size: 0.8rem;
+  color:#878787;
+}
+
+.comment_title {
+  margin: 0;
+  padding-top: 4rem;
+  padding-bottom: 1rem;
+  background-image: url(/assets/patron.png);
+  font-size: 1rem;
+}
+
 .utterances {
   background-image: url(/assets/patron.png);
 }
@@ -222,6 +261,7 @@ a, a:hover, a:focus, a:active {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  color: #586069;
 
   span {
     margin-right: 1rem;
