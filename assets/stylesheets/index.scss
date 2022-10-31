@@ -173,17 +173,26 @@ a, a:hover, a:focus, a:active {
   gap: 10px;
 }
 
-}
-
 .lo_btn {
   cursor: pointer;
   text-align: center;
   font-family: sans-serif;
   border: 1px solid #707070;
+  border-radius: 5px;
   width: 37vw;
   height: 8.2vw;
-  font-size: 3.8vw;
-  line-height: 8.5vw;
+  font-size: 0.8rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
 }
 
 .kakao_share_container {
