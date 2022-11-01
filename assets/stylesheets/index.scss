@@ -126,6 +126,7 @@ h3 {
 }
 
 h4 {
+  margin-bottom: 1.3rem;
   text-align: center;
   font-size: 0.8rem;
   color:#878787;
@@ -147,6 +148,32 @@ h4 {
   background-image: url(/assets/patron.png);
 }
 
+#bank_info {
+  width: 80vw;
+  height: 8vw;
+  background: #fff;
+  border: 1px solid #c8c8c8;
+  margin: 0 auto 1vw;
+  text-align: center;
+  line-height: 8vw;
+  font-size: 4vw;
+  font-family: "Spoqa Han Sans Neo", sans-serif;
+}
+
+#bank_contents {
+  width: 80vw;
+  margin: 0 auto;
+  text-align: center;
+  border: 1px solid #c8c8c8;
+  display: none;
+  background: #fff;
+  font-size: 3.5vw;
+  line-height: 6vw;
+  letter-spacing: -1;
+  padding: 5vw 0;
+  font-family: "Spoqa Han Sans Neo", sans-serif;
+}
+
 .location {
   width:100%;
   background-color: #ebd3bb;
@@ -158,6 +185,7 @@ h4 {
   font-size:4vw;
   line-height: 2;
   margin-bottom: 20px;
+  font-family: "Spoqa Han Sans Neo", sans-serif;
 }
 
 .location_button_container {
@@ -177,7 +205,7 @@ h4 {
 .lo_btn {
   cursor: pointer;
   text-align: center;
-  font-family: sans-serif;
+  font-family: "Spoqa Han Sans Neo", sans-serif;
   border: 1px solid #707070;
   border-radius: 5px;
   width: 37vw;
@@ -213,7 +241,7 @@ h4 {
 
 .kakao_share {
   font-size: 4.4vw;
-  font-family: sans-serif;
+  font-family: "Spoqa Han Sans Neo", sans-serif;
   color: #CDBBAB;
 }
 
@@ -221,7 +249,7 @@ h4 {
   width:100%;
   background-color: #a88b7e;
   padding: 1rem 0;
-  font-family: sans-serif;
+  font-family: "Spoqa Han Sans Neo", sans-serif;
   display: flex;
   align-items: center;
   justify-content: flex-end;
