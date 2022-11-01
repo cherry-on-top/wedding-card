@@ -1,50 +1,10 @@
-@font-face {
-  font-family: "MaruBuri", Serif;
-  src: url("/assets/fonts/MaruBuri-Regular.otf");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "MaruBuri", Serif;
-  src: url("/assets/fonts/MaruBuri-ExtraLight.otf");
-  font-weight: 100;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "MaruBuri", Serif;
-  src: url("/assets/fonts/MaruBuri-Light.otf");
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "MaruBuri", Serif;
-  src: url("/assets/fonts/MaruBuri-SemiBold.otf");
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "MaruBuri", Serif;
-  src: url("/assets/fonts/MaruBuri-Bold.otf");
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Nanum Myeongjo", serif;
-  src: url("/assets/fonts/NanumMyeongjo.otf") format("otf");
-}
-
 body {
   color: #000;
   margin: 0;
   overflow: hidden;
   width: 100%;
   box-sizing: border-box;
-  font-family: "MaruBuri, Nanum Myeongjo", serif;
+  font-family: "MaruBuri-Regular", serif;
   background-color: #F2E6DA;
 }
 
@@ -234,6 +194,10 @@ h4 {
     justify-content: center;
     height: 100%;
   }
+}
+
+.meta_image {
+  width: 100%;
 }
 
 .kakao_share_container {
