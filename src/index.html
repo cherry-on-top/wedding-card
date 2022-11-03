@@ -314,7 +314,7 @@ const link = {
   mobileWebUrl: window.location.href,
 };
 
-function KakaoLink() {
+const KakaoLink = () => {
   Kakao.Share.sendDefault({
     objectType: 'location',
     address: "서울특별시 송파구 송파대로 155 (문정동651-8)",
@@ -334,6 +334,8 @@ function KakaoLink() {
   });
 }
 </script>
+
+
 <div class="location_wrap">
   <div class="location background_image">
     <div class="location_detail">
@@ -347,11 +349,7 @@ function KakaoLink() {
         <div class="lo_btn">
           <a href="https://naver.me/x2Eav2yF">네이버맵 길찾기</a>
         </div>
-        <div class="lo_btn">
-          <a href="sms:&body=2022년 11월 20일 16시 50분 더컨벤션 송파문정점 그랜드볼룸 결혼합니다 [박천 ❤️이희진]">
-            문자 메시지로 공유하기
-          </a>
-        </div>
+        <div class="lo_btn share_link">공유하기</div>
       </div>
       <div class="location_button_container_row">
         <div class="lo_btn">
@@ -365,7 +363,17 @@ function KakaoLink() {
     </div>
   </div>
 </div>
-
+<script>
+document
+  .querySelector(".share_link")
+  .addEventListener('click', () => {
+    navigator.share({
+      title: "[박천 ❤️ 이희진] 결혼합니다",
+      text: "2022년 11월 20일 16시 50분\n더컨벤션 송파문정점 12층 그랜드볼룸",
+      url: window.location.href,
+    });
+  });
+</script>
 <h3 class="comment_title">축하의 글</h3>
 <script src="https://utteranc.es/client.js"
         repo="cherry-on-top/wedding-card"
