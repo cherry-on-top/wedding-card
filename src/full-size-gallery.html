@@ -1,0 +1,96 @@
+<script>
+const closeFullSizeGallery = () => {
+  document.getElementById("full-size-gallery").style.visibility = "hidden"
+  document.getElementById("open-full-size-gallery-button").style.display = "none"
+}
+</script>
+
+<div id="full-size-gallery"
+     class="full-size-gallery-swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-ios">
+  <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-375px, 0, 0);"
+       id="swiper-wrapper-7562f72d7c2aaf66" aria-live="polite">
+    <div class="swiper-slide swiper-slide-duplicate swiper-slide-prev" data-swiper-slide-index="8" style="width: 375px;"
+         role="group" aria-label="1 / 11">
+      <img src="/assets/crop_A_221030_014749_05678300WcAwgJ.jpg" style="width:100vw;">
+    </div>
+    <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="0" style="width: 375px;" role="group"
+         aria-label="2 / 11">
+      <img src="/assets/crop_A_221030_014646_15512000A2pWi9.jpg" style="width:100vw;">
+    </div>
+    <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="1" style="width: 375px;" role="group"
+         aria-label="3 / 11"><img src="/assets/crop_A_221030_014621_994627003X8WRM.jpg" style="width:100vw;"></div>
+    <div class="swiper-slide" data-swiper-slide-index="2" style="width: 375px;" role="group" aria-label="4 / 11"><img
+        src="/assets/crop_A_221030_014714_09048000Wk7qVf.jpg" style="width:100vw;"></div>
+    <div class="swiper-slide" data-swiper-slide-index="3" style="width: 375px;" role="group" aria-label="5 / 11"><img
+        src="/assets/crop_A_221030_014807_56617800rSgc2H.jpg" style="width:100vw;"></div>
+    <div class="swiper-slide" data-swiper-slide-index="4" style="width: 375px;" role="group" aria-label="6 / 11"><img
+        src="/assets/crop_A_221030_014515_08844400ZmEYCj.jpg" style="width:100vw;"></div>
+    <div class="swiper-slide" data-swiper-slide-index="5" style="width: 375px;" role="group" aria-label="7 / 11"><img
+        src="/assets/crop_A_221030_014910_61087600OctIgT.jpg" style="width:100vw;"></div>
+    <div class="swiper-slide" data-swiper-slide-index="6" style="width: 375px;" role="group" aria-label="8 / 11"><img
+        src="/assets/crop_A_221030_014949_20398900tN5BOI.jpg" style="width:100vw;"></div>
+    <div class="swiper-slide" data-swiper-slide-index="7" style="width: 375px;" role="group" aria-label="9 / 11"><img
+        src="/assets/crop_A_221030_014845_2194000025syCf.jpg" style="width:100vw;"></div>
+    <div class="swiper-slide swiper-slide-duplicate-prev" data-swiper-slide-index="8" style="width: 375px;" role="group"
+         aria-label="10 / 11"><img src="/assets/crop_A_221030_014749_05678300WcAwgJ.jpg" style="width:100vw;"></div>
+    <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="0"
+         style="width: 375px;" role="group" aria-label="11 / 11"><img src="/assets/crop_A_221030_014646_15512000A2pWi9.jpg"
+                                                                      style="width:100vw;"></div>
+  </div>
+  <div class="swiper-pagination-fraction swiper-pagination-bullets"><span
+      class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span
+      class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span
+      class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span
+      class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span
+      class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span></div> <span
+    class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+</div>
+<div onclick="closeFullSizeGallery()" id="open-full-size-gallery-button">
+</div>
+
+<script>
+new Swiper('.full-size-gallery-swiper-container', {
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: '1',
+  loop: true,
+  pagination: {
+    el: '.swiper-pagination-fraction',
+    type: 'bullets',
+  },
+})
+</script>
+
+<style>
+  #full-size-gallery.full-size-gallery-swiper-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    display: block;
+    background-color: #fff;
+    z-index: 102;
+  }
+
+  #full-size-gallery.swiper-container-horizontal>.swiper-pagination-bullets,
+  #full-size-gallery.swiper-pagination-fraction {
+    position: fixed;
+    bottom: 50px;
+    text-align: center;
+  }
+
+  #open-full-size-gallery-button {
+    position: fixed;
+    top: 3vw;
+    right: 3vw;
+    background-image: url("../assets/rs-default.png");
+    background-position: -32px 0;
+    width: 32px;
+    height: 32px;
+    background-color: #000;
+    border-radius: 2px;
+    margin: 6px;
+    z-index:103;
+    display:none;
+  }
+</style>

@@ -15,14 +15,3 @@ new Swiper('.swiper-container', {
     el: '.swiper-pagination',
   },
 })
-
-new Swiper('.swiper-containerF', {
-  grabCursor: true,
-  centeredSlides: true,
-  slidesPerView: '1',
-  loop: true,
-  pagination: {
-    el: '.swiper-paginationF',
-    type: 'bullets',
-  },
-})
