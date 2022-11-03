@@ -1,0 +1,34 @@
+#full-size-gallery {
+  display: none;
+
+  .full-size-gallery-swiper-container {
+    position: fixed;
+    z-index: 102;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+  }
+
+  .swiper-container-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-fraction {
+    position: fixed;
+    bottom: 50px;
+    text-align: center;
+  }
+
+  #open-full-size-gallery-button {
+    position: fixed;
+    z-index:103;
+    top: 3vw;
+    right: 3vw;
+    display: none;
+    width: 32px;
+    height: 32px;
+    border-radius: 2px;
+    margin: 6px;
+    background-color: #000;
+    background-image: url("/assets/rs-default.png");
+    background-position: -32px 0;
+  }
+}

@@ -1,5 +1,7 @@
+<link rel="stylesheet" href="/src/stylesheets/invitation.scss">
+
 <div class="background_image invitation-container">
-  <h2>초대합니다</h2>
+  <h2 class="title">초대합니다</h2>
   <div class="invitation-text">
     사계절을 7번 돌며 나란히 걷는 동안<br>
     서로에게 더 좋은 사람이 되고 싶어졌습니다.<br>
@@ -14,49 +16,12 @@
 
   <div class="parent-name-container">
     <div class="parent-name">
-      <div>박병대&nbsp;·&nbsp;은미경 <span>의 장남</span></div>
-      <div>박 천</div>
+      <p>박병대 · 은미경 <span class="particle">의 장남</span></p>
+      <p>박 천</p>
     </div>
     <div class="parent-name">
-      <div>이철호&nbsp;·&nbsp;최선이 <span>의 장녀</span></div>
-      <div>이희진</div>
+      <p>이철호 · 최선이 <span class="particle">의 장녀</span></p>
+      <p>이희진</p>
     </div>
   </div>
 </div>
-
-<style>
-  .invitation-container {
-    height:100vw;
-    width:100%;
-    background-color: #ebd3bb;
-    position: relative;
-    text-align:center;
-  }
-
-  .parent-name-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 4.8vw;
-  }
-
-  .parent-name {
-    display: flex;
-    align-items: flex-end;
-    width: 65%;
-    justify-content: space-between;
-  }
-
-  .parent-name-container .parent-name div span {
-    font-size: 3.3vw;
-  }
-
-  .invitation-text {
-    text-align: center;
-    font-size: 5vw;
-    line-height: 9vw;
-    padding-bottom: 20vw;
-    color: #5c5d5d;
-    letter-spacing: -2px;
-  }
-</style>

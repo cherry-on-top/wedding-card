@@ -1,66 +1,10 @@
+<link rel="stylesheet" href="/src/stylesheets/title-box.scss">
+
 <div class="title-box">
-  <div class="names">박천 ❤️&nbsp;이희진&nbsp;결혼합니다 </div>
+  <h2 class="title">박천 ❤️&nbsp;이희진&nbsp;결혼합니다</h2>
   <img alt="메인사진" class="main-img" src="/assets/crop_TT_221030_015436_05806100gkPyeR.jpg">
   <div class="wedding-info-container">
     <p class="wedding-date">2022년 11월 20일(일) 오후 4:50</p>
     <p class="wedding-location">더컨벤션 송파문정점 / 그랜드볼룸</p>
   </div>
 </div>
-
-<style>
-  .title-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    background-image: url("/assets/title-frame.png");
-    background-size: contain;
-    position: relative;
-  }
-
-  .title-box .names {
-    z-index: 1;
-    color: #fff;
-    font-size: 5.5vw;
-    white-space: nowrap;
-    position: absolute;
-    top: 5vh;
-  }
-
-  .title-box .main-img {
-    width: 100%;
-    z-index: -1;
-    position: absolute;
-    top: 10vh;
-  }
-
-  .wedding-info-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    position: absolute;
-    top: 82.1vh;
-    height: 7vh;
-    gap: 1vh;
-  }
-
-  .wedding-info-container p {
-    margin: 0;
-  }
-
-  .wedding-info-container .wedding-date {
-    z-index: 1;
-    color: #fff;
-    font-size: 4.5vw;
-    white-space: nowrap;
-  }
-
-  .wedding-info-container .wedding-location {
-    z-index: 1;
-    color: #fff;
-    font-size: 4.5vw;
-    white-space: nowrap;
-  }
-</style>
