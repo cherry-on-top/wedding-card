@@ -36,69 +36,26 @@ body {
   font-family: MaruBuri-Regular, serif;
 }
 
-li {
-  list-style: none;
-}
-
 a, a:hover, a:focus, a:active {
   color: inherit;
   text-decoration: none;
 }
 
-.item a {
-  color: #000
-}
-
-/* .middle{position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);} */
-.menu {
-  overflow: hidden;
-  width: 91vw;
-  margin: 0 auto;
-}
-
-.item {
-  overflow: hidden;
-}
-
-.btn {
-  position: relative;
-  display: block;
-  width: 90vw;
-  height: 8vw;
-  border: 1px solid #a4a4a2;
-  margin: 0 auto;
-  font-size: 4vw;
-  font-weight: 700;
-  line-height: 8vw;
-  text-align: center;
-}
-
-.gallery_container {
-  position: relative;
-  height: 9rem;
-  background-color: #ebd3bb;
-  text-align:center;
-}
-
-
-
 .comment_title {
   padding-top: 4rem;
   padding-bottom: 1rem;
   margin: 0;
-  background-image: url(/assets/patron.png);
+  background-image: url("/assets/patron.png");
   font-size: 1rem;
 }
 
 .utterances {
-  background-image: url(/assets/patron.png);
+  background-image: url("/assets/patron.png");
 }
 
-.background_image {
-  background-image: url(/assets/patron.png);
+.background-image {
+  background-image: url("/assets/patron.png");
 }
-
-
 
 #bank_info {
   width: 80vw;

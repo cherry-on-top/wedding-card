@@ -1,0 +1,53 @@
+<link rel="stylesheet" href="/src/stylesheets/photo-gallery.scss">
+
+<div class="background-image gallery-container">
+  <h2 class="title">웨딩 갤러러</h2>
+  <div class="swiper photo-gallery">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="/assets/crop_A_221030_014845_2194000025syCf.jpg"/></div>
+      <div class="swiper-slide"><img src="/assets/crop_A_221030_014749_05678300WcAwgJ.jpg"/></div>
+      <div class="swiper-slide"><img src="/assets/crop_A_221030_014646_15512000A2pWi9.jpg"/></div>
+      <div class="swiper-slide"><img src="/assets/crop_A_221030_014621_994627003X8WRM.jpg"/></div>
+      <div class="swiper-slide"><img src="/assets/crop_A_221030_014714_09048000Wk7qVf.jpg"/></div>
+      <div class="swiper-slide"><img src="/assets/crop_A_221030_014807_56617800rSgc2H.jpg"/></div>
+      <div class="swiper-slide"><img src="/assets/crop_A_221030_014515_08844400ZmEYCj.jpg"/></div>
+      <div class="swiper-slide"><img src="/assets/crop_A_221030_014910_61087600OctIgT.jpg"/></div>
+      <div class="swiper-slide"><img src="/assets/crop_A_221030_014949_20398900tN5BOI.jpg"/></div>
+      <div class="swiper-slide"><img src="/assets/crop_A_221030_014845_2194000025syCf.jpg"/></div>
+      <div class="swiper-slide"><img src="/assets/crop_A_221030_014749_05678300WcAwgJ.jpg"/></div>
+      <div class="swiper-slide"><img src="/assets/crop_A_221030_014646_15512000A2pWi9.jpg"/></div>
+      <div class="swiper-slide"><img src="/assets/crop_A_221030_014621_994627003X8WRM.jpg"/></div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <p class="gallery-invitation">
+    You are cordially invited to our wedding. <br>
+    Please join us in celebration on this joyous occasion.
+  </p>
+</div>
+
+<script>
+const openCloseFullSizeGallery = () => {
+  document.getElementById("full-size-gallery").style.visibility = "visible"
+  document.getElementById("open-full-size-gallery-button").style.display = "block"
+}
+
+new Swiper(".photo-gallery", {
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  coverflowEffect: {
+    rotate: 50,
+    stretch: 0,
+    depth: 100,
+    modifier: 1,
+    slideShadows: true,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+  },
+});
+</script>
+
