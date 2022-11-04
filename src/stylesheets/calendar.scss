@@ -1,0 +1,102 @@
+.calendar-container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+
+  .date-photo {
+    width: 100%;
+  }
+
+  .month {
+    margin: auto 0;
+  }
+
+  .calendar {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin: 0 auto auto;
+
+    .calendar-left {
+      .year {
+        font-size: 0.7rem;
+      }
+
+      .month {
+        margin-top: 7px;
+        font-size: 1.4rem;
+        font-weight: bold;
+        letter-spacing: 4px;
+      }
+    }
+
+    .calendar-right {
+      width: 65%;
+
+      table {
+        margin: 0 auto;
+        border-collapse: collapse;
+        border-spacing: 0;
+
+        tr {
+          height: 2.5rem;
+        }
+
+        th {
+          width: 14.28%
+        }
+
+        tr th, td {
+          font-size: 1rem;
+          font-weight: normal;
+          text-align: center;
+        }
+
+        tr th:first-child {
+          color: #e97265;
+        }
+
+        tr td:first-child {
+          color: #e97265;
+        }
+
+        .weekday {
+          height: 2rem;
+          vertical-align: top;
+        }
+
+        .marriage-day {
+          color: #e97265;
+        }
+
+        .holiday {
+          color: #e97265;
+        }
+
+        .day-box {
+          display: inline-block;
+          width: 8vw;
+          height: 8vw;
+          border-radius: 50px;
+          background-color: #c69c6c;
+          color: #fff;
+          font-size: 4vw;
+          line-height: 8vw;
+        }
+
+        .day-box-font {
+          margin-top: 2px;
+          color: #c69c6c;
+          font-weight: bold;
+        }
+
+
+      }
+    }
+  }
+}
