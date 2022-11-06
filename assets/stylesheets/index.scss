@@ -46,18 +46,3 @@ a, a:hover, a:focus, a:active {
 .background-image {
   background-image: url("/assets/patron.png");
 }
-
-.credit {
-  display: flex;
-  width:100%;
-  align-items: center;
-  justify-content: flex-end;
-  padding: 1rem 0;
-  background-color: #a88b7e;
-  color: #586069;
-  font-family: "Spoqa Han Sans Neo", sans-serif;
-
-  span {
-    margin-right: 1rem;
-  }
-}
