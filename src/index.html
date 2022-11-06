@@ -42,27 +42,7 @@
 <include src="./src/components/invitation.html"></include>
 <include src="./src/components/calendar.html"></include>
 <include src="./src/components/photo-gallery.html"></include>
-
-<div class="background-image" style="margin: 0 auto;background-color: #fff;line-height: 6vw;">
-  <div style="height: 3vw;"></div>
-  <h3>
-    마음 전하실 곳
-  </h3>
-  <h4>“두 사람을 축하하는 마음을 전해주세요”</h4>
-  <div id="bank_info">계좌번호 확인하기</div>
-  <div id="bank_contents"> 토스뱅크 1000-0096-0089 예금주: 박천(신랑)
-    <br> 토스뱅크 1000-0312-5259 예금주: 이희진(신부) </div>
-  <div style=" height: 0;clear: both;"></div>
-  <script>
-  $(function() {
-    $("#bank_info").click(function() {
-      $("#bank_contents").toggle();
-    });
-  });
-  </script>
-  <!-- 마음 전하실 곳 종료-->
-  <div style="height: 10vw;"></div>
-</div>
+<include src="./src/components/transfer.html"></include>
 
 <!-- 맵 -->
 <div style="position: relative; width: 100%;margin: 0 auto;">
