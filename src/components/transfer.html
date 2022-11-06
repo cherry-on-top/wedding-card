@@ -1,5 +1,4 @@
 <link rel="stylesheet" href="/src/stylesheets/transfer.scss">
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 
 <div class="background-image transfer-container">
   <h2 class="title">
@@ -22,20 +21,4 @@
   </div>
 </div>
 
-<script>
-  document
-    .querySelectorAll(".account-info")
-    .forEach((button) => {
-      button.addEventListener("click", (event) => {
-        const account = event.target.closest(".account");
-        const accountNumber = account.querySelector(".account-number").innerText;
-        const accountName = account.querySelector(".account-name").innerText;
-        const accountText = `${accountName} ${accountNumber}`;
-        navigator.clipboard.writeText(accountText).then(() => {
-          alert("복사되었습니다.");
-        }, () => {
-          alert("복사에 실패했습니다.");
-        });
-      });
-    });
-</script>
+<script type="module" src="/src/scripts/transfer.ts"></script>
