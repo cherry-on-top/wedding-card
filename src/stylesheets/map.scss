@@ -1,0 +1,29 @@
+.map-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ebd3bb;
+
+  #map {
+    width: 100%;
+    height: 30vh;
+  }
+
+  .detailed-map-button {
+    width:100%;
+    height:9.4vw;
+    background-color: #a88b7e;
+    color:#fff;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-size: 0.9rem;
+
+    a {
+      display: flex;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

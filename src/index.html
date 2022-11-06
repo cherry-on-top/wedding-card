@@ -24,7 +24,6 @@
   <script type="text/javascript" src="/lib/jquery-1.11.2.min.js"></script>
   <script type="text/javascript" src="/lib/swiper-bundle.min.js"></script>
   <script type="text/javascript" src="https://t1.kakaocdn.net/kakao_js_sdk/2.0.0/kakao.min.js" integrity="sha384-PFHeU/4gvSH8kpvhrigAPfZGBDPs372JceJq3jAXce11bVA6rMvGWzvP4fMQuBGL" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=c29d9bf272a1cb2738657e8ca6a20b05"></script>
 
   <link rel="stylesheet" href="/lib/swiper-bundle.min.css">
 
@@ -32,7 +31,6 @@
   <link href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css" rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="/assets/stylesheets/index.scss">
-  <link rel="stylesheet" href="/assets/stylesheets/map.scss">
 </head>
 
 <body>
@@ -43,33 +41,8 @@
 <include src="./src/components/calendar.html"></include>
 <include src="./src/components/photo-gallery.html"></include>
 <include src="./src/components/transfer.html"></include>
-
+<include src="./src/components/map.html"></include>
 <!-- 맵 -->
-<div style="position: relative; width: 100%;margin: 0 auto;">
-  <div id="map" style="width: 100%;height: 300px;"></div>
-  <div class="detailed-map-button">
-    <a href="https://map.kakao.com/link/map/167068900">
-      지도를 자세히 보려면 여기를 눌러주세요.
-    </a>
-  </div>
-</div>
-<!-- 맵 종료-->
-<script>
-const mapContainer = document.getElementById('map');
-const mapOption = {
-  center: new kakao.maps.LatLng(37.4840160, 127.1226450), // 지도의 중심좌표
-  level: 4 // 지도의 확대 레벨
-}
-const map = new kakao.maps.Map(mapContainer, mapOption)
-const zoomControl = new kakao.maps.ZoomControl()
-map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
-
-const markerPosition = new kakao.maps.LatLng(37.4840160, 127.1226450)
-const marker = new kakao.maps.Marker({
-  position: markerPosition
-})
-marker.setMap(map);
-</script>
 
 <script type="text/javascript">
 Kakao.init('c29d9bf272a1cb2738657e8ca6a20b05');

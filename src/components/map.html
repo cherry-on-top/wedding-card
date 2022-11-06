@@ -1,0 +1,28 @@
+<script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=c29d9bf272a1cb2738657e8ca6a20b05"></script>
+<link rel="stylesheet" href="/src/stylesheets/map.scss">
+
+<div class="map-container">
+  <div id="map"></div>
+  <div class="detailed-map-button">
+    <a href="https://map.kakao.com/link/map/167068900">
+      지도를 자세히 보려면 여기를 눌러주세요.
+    </a>
+  </div>
+</div>
+
+<script>
+const mapContainer = document.getElementById("map");
+const mapOption = {
+  center: new kakao.maps.LatLng(37.4840160, 127.1226450), // 지도의 중심좌표
+  level: 4 // 지도의 확대 레벨
+}
+const map = new kakao.maps.Map(mapContainer, mapOption)
+const zoomControl = new kakao.maps.ZoomControl()
+map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
+
+const markerPosition = new kakao.maps.LatLng(37.4840160, 127.1226450)
+const marker = new kakao.maps.Marker({
+  position: markerPosition
+})
+marker.setMap(map);
+</script>
