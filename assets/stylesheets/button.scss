@@ -1,0 +1,26 @@
+.uk-button {
+  display:inline-block;
+  overflow:visible;
+  box-sizing:border-box;
+  padding:0 30px;
+  border:1px solid #A88B7E;
+  border-radius:0;
+  margin:0;
+  appearance:none;
+  background-color: transparent;
+  color:inherit;
+  text-align:center;
+  text-decoration:none;
+  text-transform:none;
+  transition:.1s ease-in-out;
+  transition-property:color,background-color,border-color;
+  vertical-align:middle;
+  word-break: keep-all;
+}
+
+.uk-button:hover {
+  border-color:#b2b2b2;
+  background-color:transparent;
+  text-decoration:none;
+}
+

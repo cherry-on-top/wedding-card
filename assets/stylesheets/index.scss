@@ -59,75 +59,12 @@ a, a:hover, a:focus, a:active {
 
 
 
-.location {
-  width:100%;
-  padding: 30px 0;
-  background-color: #ebd3bb;
-  text-align: center;
-}
 
-.location_detail {
-  margin-bottom: 20px;
-  font-family: "Spoqa Han Sans Neo", sans-serif;
-  font-size:4vw;
-  line-height: 2;
-}
-
-.location_button_container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-  background-color: #ebd3bb;
-}
-
-.location_button_container_row {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.lo_btn {
-  display: flex;
-  width: 37vw;
-  height: 8.2vw;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid #707070;
-  border-radius: 5px;
-  cursor: pointer;
-  font-family: "Spoqa Han Sans Neo", sans-serif;
-  font-size: 0.8rem;
-  text-align: center;
-
-  a {
-    display: flex;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-  }
-}
 
 .meta_image {
   width: 100%;
 }
 
-.kakao_share_container {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-}
-
-.kakao_share_icon {
-  width: 6.25vw;
-  vertical-align:-7px;
-}
-
-.kakao_share {
-  color: #CDBBAB;
-  font-family: "Spoqa Han Sans Neo", sans-serif;
-  font-size: 4.4vw;
-}
 
 .credit {
   display: flex;

@@ -23,7 +23,6 @@
 
   <script type="text/javascript" src="/lib/jquery-1.11.2.min.js"></script>
   <script type="text/javascript" src="/lib/swiper-bundle.min.js"></script>
-  <script type="text/javascript" src="https://t1.kakaocdn.net/kakao_js_sdk/2.0.0/kakao.min.js" integrity="sha384-PFHeU/4gvSH8kpvhrigAPfZGBDPs372JceJq3jAXce11bVA6rMvGWzvP4fMQuBGL" crossorigin="anonymous"></script>
 
   <link rel="stylesheet" href="/lib/swiper-bundle.min.css">
 
@@ -41,76 +40,10 @@
 <include src="./src/components/photo-gallery.html"></include>
 <include src="./src/components/transfer.html"></include>
 <include src="./src/components/map.html"></include>
+<include src="./src/components/share-link.html"></include>
 <!-- 맵 -->
 
-<script type="text/javascript">
-Kakao.init('c29d9bf272a1cb2738657e8ca6a20b05');
 
-const link = {
-  webUrl: window.location.href,
-  mobileWebUrl: window.location.href,
-};
-
-const KakaoLink = () => {
-  Kakao.Share.sendDefault({
-    objectType: 'location',
-    address: "서울특별시 송파구 송파대로 155 (문정동651-8)",
-    addressTitle: "더컨벤션 송파문정점 그랜드볼룸",
-    content: {
-      title: "[박천 ❤️ 이희진] 결혼합니다",
-      description: "2022년 11월 20일 16시 50분\n더컨벤션 송파문정점 12층 그랜드볼룸",
-      imageUrl: document.querySelector(".meta_image").src,
-      imageWidth: 1350,
-      imageHeight: 675,
-      link,
-    },
-    buttons: [{
-      title: '초대장 바로가기',
-      link
-    }]
-  });
-}
-</script>
-
-
-<div class="location_wrap">
-  <div class="location background-image">
-    <div class="location_detail">
-      서울특별시 송파구 송파대로 155 (문정동651-8)<br>
-      더컨벤션 송파문정점 / 그랜드볼룸 12층<br>
-      <a href="tel:02-6418-5000">02-6418-5000</a>
-    </div>
-
-    <div class="background-image location_button_container">
-      <div class="location_button_container_row">
-        <div class="lo_btn">
-          <a href="https://naver.me/x2Eav2yF">네이버맵 길찾기</a>
-        </div>
-        <div class="lo_btn share_link">공유하기</div>
-      </div>
-      <div class="location_button_container_row">
-        <div class="lo_btn">
-          <a href="https://map.kakao.com/link/to/167068900">카카오맵 길찾기</a>
-        </div>
-        <div class="lo_btn"
-             onclick="KakaoLink();">
-          카카오톡으로 공유하기
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<script>
-document
-  .querySelector(".share_link")
-  .addEventListener('click', () => {
-    navigator.share({
-      title: "[박천 ❤️ 이희진] 결혼합니다",
-      text: "2022년 11월 20일 16시 50분\n더컨벤션 송파문정점 12층 그랜드볼룸",
-      url: window.location.href,
-    });
-  });
-</script>
 <h3 class="comment_title">축하의 글</h3>
 <script src="https://utteranc.es/client.js"
         repo="cherry-on-top/wedding-card"

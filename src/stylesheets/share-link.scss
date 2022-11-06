@@ -1,0 +1,45 @@
+.location {
+  width:100%;
+  padding: 30px 0;
+  background-color: #ebd3bb;
+  text-align: center;
+}
+
+.location-detail {
+  margin-bottom: 20px;
+  font-family: "Spoqa Han Sans Neo", sans-serif;
+  font-size:0.9rem;
+  line-height: 2;
+}
+
+.location-button-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #ebd3bb;
+}
+
+.location-button-container-row {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.share-button {
+  display: flex;
+  width: 10rem;
+  height: 2.5rem;
+  align-items: center;
+  justify-content: center;
+  font-family: "Spoqa Han Sans Neo", sans-serif;
+  font-size: 0.8rem;
+  text-align: center;
+
+  a {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+}
