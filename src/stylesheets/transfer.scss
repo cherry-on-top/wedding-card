@@ -22,7 +22,11 @@
     justify-content: space-around;
     font-family: "Spoqa Han Sans Neo", sans-serif;
 
-    p {
+    dt {
+      font-weight: 600;
+    }
+
+    dt, dd {
       margin: 0.5rem 0;
       color: #878787;
       font-size: 0.8rem;
