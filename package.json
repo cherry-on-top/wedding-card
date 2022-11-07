@@ -1,7 +1,7 @@
 {
   "name": "wedding-card",
   "version": "1.0.0",
-  "repository": "https://github.com/say8425/wedding-card",
+  "repository": "https://github.com/cherry-on-top/wedding-card",
   "author": "Cheon Park",
   "source": "src/index.html",
   "scripts": {
