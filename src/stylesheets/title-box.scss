@@ -1,18 +1,24 @@
-.title-box {
+.title-box-container {
   position: relative;
   display: flex;
   width: 100%;
   height: 100vh;
   flex-direction: column;
   align-items: center;
-  background-image: url("/assets/title-frame.png");
-  background-size: contain;
 
   .title {
     position: absolute;
     z-index: 1;
     top: 5vh;
     color: #fff;
+  }
+
+  .title-frame {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
   }
 
   .main-img {
