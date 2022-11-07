@@ -15,7 +15,7 @@ const KakaoLink = () => {
       description:
         "2022년 11월 20일 16시 50분\n더컨벤션 송파문정점 12층 그랜드볼룸",
       imageUrl:
-        (document.querySelector(".main-img") as HTMLImageElement)?.src ?? "",
+        (document.querySelector(".date-photo") as HTMLImageElement)?.src ?? "",
       imageWidth: 1350,
       imageHeight: 675,
       link,
