@@ -1,19 +1,30 @@
 .share-link-container {
   display: flex;
   width: 100%;
-  height: 25vh;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #ebd3bb;
+}
+
+.location-detail-container {
+  display: flex;
+  width: 100%;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  background-color: #ebd3bb;
-  gap: 1rem;
+  gap: 0.5rem;
 }
 
 .location-detail {
+  margin: 0;
   font-family: "Spoqa Han Sans Neo", sans-serif;
-  font-size:0.9rem;
-  line-height: 2;
-  text-align: center;
+  font-size: 0.9rem;
+
+  .tel-hall {
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+  }
 }
 
 .share-link-button-container {
@@ -27,7 +38,7 @@
 .share-link-button-container-row {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 0.5rem;
 }
 
 .share-button {

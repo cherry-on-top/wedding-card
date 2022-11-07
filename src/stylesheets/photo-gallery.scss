@@ -4,17 +4,15 @@
   height: 100vh;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 
   .swiper {
     width: 100%;
-    padding-top: 50px;
-    padding-bottom: 50px;
   }
 
   .swiper-slide {
-    width: 300px;
-    height: 300px;
+    width: 19rem;
+    height: 19rem;
     background-position: center;
     background-size: cover;
   }
@@ -32,7 +30,6 @@
 
   .gallery-invitation {
     padding: 0 2rem;
-    margin-bottom: 5rem;
     color: #D5CBC0;
     font-size: 0.8rem;
     text-align: center;
