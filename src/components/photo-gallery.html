@@ -13,10 +13,6 @@
       <div class="swiper-slide"><img src="/assets/crop_A_221030_014515_08844400ZmEYCj.jpg"/></div>
       <div class="swiper-slide"><img src="/assets/crop_A_221030_014910_61087600OctIgT.jpg"/></div>
       <div class="swiper-slide"><img src="/assets/crop_A_221030_014949_20398900tN5BOI.jpg"/></div>
-      <div class="swiper-slide"><img src="/assets/crop_A_221030_014845_2194000025syCf.jpg"/></div>
-      <div class="swiper-slide"><img src="/assets/crop_A_221030_014749_05678300WcAwgJ.jpg"/></div>
-      <div class="swiper-slide"><img src="/assets/crop_A_221030_014646_15512000A2pWi9.jpg"/></div>
-      <div class="swiper-slide"><img src="/assets/crop_A_221030_014621_994627003X8WRM.jpg"/></div>
     </div>
     <div class="swiper-pagination"></div>
   </div>
@@ -27,11 +23,10 @@
   </p>
 </div>
 
-<script>
-const openCloseFullSizeGallery = () => {
-  document.getElementById("full-size-gallery").style.visibility = "visible"
-  document.getElementById("open-full-size-gallery-button").style.display = "block"
-}
+<script type="module">
+import "swiper/swiper.scss";
+
+import Swiper, { EffectCoverflow, Pagination } from "swiper";
 
 new Swiper(".photo-gallery", {
   effect: "coverflow",
@@ -45,9 +40,9 @@ new Swiper(".photo-gallery", {
     modifier: 1,
     slideShadows: true,
   },
+  modules: [Pagination, EffectCoverflow],
   pagination: {
     el: ".swiper-pagination",
   },
 });
 </script>
-
