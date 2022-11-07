@@ -23,18 +23,18 @@
     margin-bottom: 5rem;
     font-size: 1rem;
 
-    .parent-name {
+    .parent-name-row {
       display: flex;
-      width: 65%;
+      width: 14.5rem;
       align-items: flex-end;
       justify-content: space-between;
 
-      p {
+      .parent-name {
         margin: 0.5rem 0;
       }
 
       .particle {
-        font-size: 3.3vw;
+        font-size: 0.6rem;
       }
     }
   }
