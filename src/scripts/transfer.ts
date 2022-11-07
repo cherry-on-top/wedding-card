@@ -6,6 +6,12 @@ const Toast = Swal.mixin({
   timerProgressBar: false,
   timer: 3000,
   position: "bottom",
+  showClass: {
+    popup: "animated animate-fade-in",
+  },
+  hideClass: {
+    popup: "animated animate-fade-out",
+  },
 });
 for (const element of document.querySelectorAll(".account-info")) {
   element.addEventListener("click", (event) => {
@@ -16,7 +22,11 @@ for (const element of document.querySelectorAll(".account-info")) {
     const accountName =
       (account?.querySelector(".account-name") as HTMLParagraphElement)
         ?.innerText ?? "";
-    const accountText = `${accountName} ${accountNumber}`.trim();
+    const accountHolder =
+      (account?.querySelector(".account-holder") as HTMLParagraphElement)
+        ?.innerText ?? "";
+    const accountText =
+      `${accountName} ${accountNumber} ${accountHolder}`.trim();
 
     if (!accountText) {
       return;

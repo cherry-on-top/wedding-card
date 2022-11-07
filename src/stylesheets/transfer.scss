@@ -37,8 +37,12 @@
   }
 }
 
+.swal2-popup.swal2-toast .swal2-title {
+  margin: 0;
+}
+
 .swal2-container.swal2-bottom>.swal2-popup {
-  padding: 0.5rem;
+  padding: 1rem;
   font-family: "Spoqa Han Sans Neo", sans-serif;
   font-size: 0.9rem;
 }
