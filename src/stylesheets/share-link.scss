@@ -9,17 +9,12 @@
 }
 
 .location-detail-container {
-  display: flex;
   width: 100%;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.5rem;
-
-  .location-detail {
-    margin: 0;
-    font-family: "Spoqa Han Sans Neo", sans-serif;
-    font-size: 0.8rem;
-  }
+  font-family: "Spoqa Han Sans Neo", sans-serif;
+  font-size: 0.8rem;
+  font-style: normal;
+  line-height: 2;
+  text-align: center;
 }
 
 .share-link-button-container {
