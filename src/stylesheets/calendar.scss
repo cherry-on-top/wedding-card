@@ -10,8 +10,12 @@
     width: 100%;
   }
 
-  .month {
+  .title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: auto 0;
+    gap: 1rem;
   }
 
   .calendar {
