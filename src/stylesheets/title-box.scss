@@ -2,14 +2,14 @@
   position: relative;
   display: flex;
   width: 100%;
-  height: 100vh;
+  height: 100svh;
   flex-direction: column;
   align-items: center;
 
   .title {
     position: absolute;
     z-index: 1;
-    top: 5vh;
+    top: 5svh;
   }
 
   .title-frame {
@@ -17,26 +17,25 @@
     z-index: 0;
     top: 0;
     width: 100%;
-    height: 100vh;
+    height: 100svh;
   }
 
   .main-img {
     position: absolute;
     z-index: -1;
-    top: 10vh;
+    top: 10svh;
     width: 100%;
   }
 }
 
 .wedding-info-container {
   position: absolute;
-  top: 82.1vh;
+  top: 84.5svh;
   display: flex;
-  height: 7vh;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  gap: 1vh;
+  gap: 1svh;
 
   p {
     margin: 0;
