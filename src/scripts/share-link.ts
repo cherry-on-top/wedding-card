@@ -1,3 +1,5 @@
+import { toast } from "./toast";
+
 Kakao.init("c29d9bf272a1cb2738657e8ca6a20b05");
 
 const link = {
@@ -37,6 +39,22 @@ const shareLink = async () => {
   });
 };
 
+const copyLink = async () => {
+  const link = window.location.href;
+  navigator.clipboard
+    .writeText(link)
+    .then(async () => {
+      await toast.fire({
+        title: "주소가 복사되었습니다.",
+      });
+    })
+    .catch(async () => {
+      await toast.fire({
+        title: "주소 복사에 실패했습니다.",
+      });
+    });
+};
+
 (document.querySelector(".share-link-kakao") as HTMLElement).addEventListener(
   "click",
   KakaoLink,
@@ -44,5 +62,11 @@ const shareLink = async () => {
 
 (document.querySelector(".share-link") as HTMLElement).addEventListener(
   "click",
-  shareLink,
+  async () => {
+    try {
+      await shareLink();
+    } catch {
+      await copyLink();
+    }
+  },
 );

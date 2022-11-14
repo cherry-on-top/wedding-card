@@ -1,18 +1,5 @@
-import Swal from "sweetalert2";
+import { toast } from "./toast";
 
-const Toast = Swal.mixin({
-  toast: true,
-  showConfirmButton: false,
-  timerProgressBar: false,
-  timer: 3000,
-  position: "bottom",
-  showClass: {
-    popup: "animated animate-fade-in",
-  },
-  hideClass: {
-    popup: "animated animate-fade-out",
-  },
-});
 for (const element of document.querySelectorAll(".account-info")) {
   element.addEventListener("click", (event) => {
     const account = (event.target as HTMLElement).closest(".account");
@@ -35,12 +22,12 @@ for (const element of document.querySelectorAll(".account-info")) {
     navigator.clipboard
       .writeText(accountText)
       .then(async () => {
-        await Toast.fire({
+        await toast.fire({
           title: "계좌정보가 복사되었습니다.",
         });
       })
       .catch(async () => {
-        await Toast.fire({
+        await toast.fire({
           title: "계좌정보 복사에 실패했습니다.",
         });
       });
